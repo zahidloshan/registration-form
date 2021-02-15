@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Registration Form</title>
+</head>
+<body>
+	<h1>Registration form</h1>
+
+	<form action="/submit.php" target="_self" method="POST">
+
+		<fieldset>
+			<legend>Basic Information :</legend>
+		<!-- Name  -->
+        <label for="name">Enter your name : </label>
+		<input type="text" name="Sname" id="name">
+		<br>
+
+		<!-- Gender  -->
+		<label>Gender : </label>
+		<input type="Radio" name="Gender" value="Male" id="male">
+		<label for="male">Male</label>
+		<input type="Radio" name="Gender" value="Fmale" id="fmale">
+		<label for="fmale">Fmale</label>
+         <br>
+
+         <!-- Date Of Birth  -->
+        <label>Date Of Birth : </label>
+        <input type="date" name="date" id="date">
+        <br>
+        <!-- Dropdown  -->
+        <label for="religion">Religion : </label>
+		<select id="religion" name="Reg">
+			<option value="Islam">Islam</option>
+			<option value="Hinduism">Hinduism</option>
+			<option value="Buddhism">Buddhism</option>
+		</select>
+
+        <br>
+        <!-- Father Name  -->
+        <label for="fname">Father's name : </label>
+		<input type="text" name="Fathername" id="fname">
+		<br>
+
+		<!-- Mother Name  -->
+		<label for="mname">Mother's name : </label>
+		<input type="text" name="Mothername" id="mname">
+		<br>
+
+	</fieldset>
+
+	<fieldset>
+		
+	   <legend>Contact Information :</legend>
+
+        <!-- Present Address  -->
+		<label for="paddress">Present Address : </label>
+		<input type="text" name="presentaddress" id="paddress">
+		<br>
+		<!-- Permanent Address  -->
+		<label for="peraddress">Permanent Address : </label>
+		<input type="text" name="Permanentaddress" id="peraddress">
+		<br>
+        <!-- Phone  -->
+		<label for="phone">Phone : </label>
+		<input type="tel" name="Tphone" id="phone">
+		<br>
+        <!-- Email  -->
+		<label for="email">Email : </label>
+		<input type="email" name="Mail" id="email">
+		<br>
+        <!-- Personal Website Link  -->
+		<a href="https://github.com/zahidloshan" target="_blank" >For more details 
+	    </a>
+
+    </fieldset>
+
+    <fieldset>
+		
+	   <legend>Academic Information :</legend>
+
+        <!-- SSC  -->
+		<label for="sscyear">SSC Year : </label>
+		<input type="number" name="ssc" id="sscyear">
+		<br>
+		<label for="sssins">SSC Institution : </label>
+		<input type="text" name="sscinstitution" id="sscins">
+		<br>
+         
+         <!-- HSC  -->
+		<label for="hscyear">HSC Year : </label>
+		<input type="number" name="hsc" id="hscyear">
+		<br>
+		<label for="hscins">HSC Institution : </label>
+		<input type="text" name="hscinstitution" id="hscins">
+		<br>
+
+	</fieldset>
+
+	<input type="submit" value="submit">
+
+	</form>
+
+</body>
+</html>
